@@ -16,6 +16,18 @@ A Manifest V3 Chrome extension that highlights Seller SKUs and multi-quantity ro
 3. Click **Load unpacked** and select this folder.
 4. Pin the extension and click its icon to toggle highlighting on the order page.
 
+## Requirements
+
+- A Chromium-based browser with Manifest V3 support (Chrome 88+, Edge 88+, or equivalent).
+
+## Permissions
+
+Declared in `manifest.json`:
+
+- `storage` — persists the on/off toggle in `chrome.storage.sync`.
+- `activeTab`, `scripting` — used by the popup to query the active tab and send the toggle message.
+- `content_scripts` is registered with `matches: ["<all_urls>"]`, so the script is injected on every page; in practice it only touches DOM nodes matching TikTok Shop order-page selectors (`tr.goGcNp`, `.isUnTN`, `Seller SKU:` text). It makes no network requests and reads or transmits no account or order data outside the current page.
+
 ## Project structure
 
 ```
