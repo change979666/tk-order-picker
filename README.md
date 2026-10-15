@@ -30,3 +30,13 @@ A Manifest V3 Chrome extension that highlights Seller SKUs and multi-quantity ro
 
 - The extension relies on TikTok Shop's current DOM class names (e.g. `tr.goGcNp`, `.isUnTN`). If TikTok updates its frontend, the selectors in `content_script.js` may need to be updated.
 - No data leaves the browser; the extension only reads and modifies the current page DOM.
+
+## License & Attribution / 许可与来源
+
+Original project code authored for this repository is released under the MIT License; see [LICENSE](./LICENSE).
+
+When reusing or redistributing a substantial portion, retain the LICENSE and its copyright notice. The copyright notice includes this original source URL: https://github.com/change979666/tk-order-picker. Please keep the source link visible in your redistributed source or project documentation.
+
+This license applies only to original material that the repository maintainer has the right to license. Third-party libraries, vendor code, platform SDKs, trademarks, screenshots, icons, fonts, and other external assets remain subject to their respective licenses and terms. Review those terms before reuse.
+
+**Project status:** personal/archived project, shared as-is. Maintenance, compatibility, and production readiness are not guaranteed.
